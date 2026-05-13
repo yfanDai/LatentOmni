@@ -9,7 +9,7 @@
   <a href="#"><img src="https://img.shields.io/badge/Dataset-LatentOmni--Instruct--35K-green" height="25" alt="Dataset"></a>
 </div>
 
-## News
+## 🔥 News
 
 - **[2026.05.13]** We initialize the LatentOmni repository with the project overview, visual assets, and release roadmap.
 
