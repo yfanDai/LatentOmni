@@ -85,7 +85,6 @@ Code, checkpoints, evaluation scripts, and dataset download instructions are com
 
 If you find this project useful, please consider citing our work. The BibTeX entry will be updated once the paper is publicly available.
 
-## 📒 License
 
 ## 📒 License
 
