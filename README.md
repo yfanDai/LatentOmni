@@ -77,6 +77,13 @@ Code, checkpoints, evaluation scripts, and dataset download instructions are com
 
 ### 3️⃣ Performance comparison with other Latent Reasoning Methods on VideoMME (w/o audio)
 
+<p align="center">
+  <img src="assets/Table3.png" width="100%" alt="LatentOmni reasoning visualization" />
+</p>
+<p align="center">
+  <i>Performance comparison with recent visual latent reasoning methods on the VideoMME benchmark (without audio inputs). The <b>best</b> is highlighted.</i>
+</p>
+
 ## 🔭 Visualizations
 
 <details open>
