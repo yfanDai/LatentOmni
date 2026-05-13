@@ -75,7 +75,7 @@ Code, checkpoints, evaluation scripts, and dataset download instructions are com
   <i>Accuracy comparison of LatentOmni and other methods on OmniVideoBench. The <b>best</b> is highlighted and the second-best is <u>underlined</u>. The performance gain of our method over the base model is indicated in red parentheses.</i>
 </p>
 
-### 3️⃣ Performance comparison with other Latent Reasoning Methods on VideoMME (w/o audio)
+### 3️⃣ Performance comparison with other Latent Reasoning Methods on VideoMME
 
 <p align="center">
   <img src="assets/Table3.png" width="100%" alt="LatentOmni reasoning visualization" />
