@@ -33,7 +33,7 @@ We are actively preparing to release the following:
   <img src="assets/overview.png" width="100%" alt="LatentOmni overview" />
 </p>
 <p align="center">
-  <i>Overview of LatentOmni. The framework enables unified latent reasoning to bridge audio, visual, and textual semantics through feature-level supervision and temporally synchronized audio-visual position encoding (OSPE).</i>
+  <i>LatentOmni Overview. Left: A start embedding automatically triggers latent reasoning. The model autoregressively generates latent audio-visual embeddings, temporally synchronized via OSPE for precise cross-modal reasoning. Right: Training employs three specialized losses and a controlled attention flow, explicitly guiding the model to leverage latent representations for downstream reasoning.</i>
 </p>
 
 ## 🔍 Contributions
