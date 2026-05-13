@@ -3,11 +3,13 @@
 </p>
 
 <div align="center">
-  <a href="#"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg"></a>
-  <a href="#"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Paper%20Coming%20Soon&color=blue"></a>
-  <a href="#"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model%20Coming%20Soon&color=green"></a>
-  <a href="#"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Data%20Coming%20Soon&color=yellow"></a>
-  <a href="https://github.com/yfanDai/LatentOmni"><img alt="Build" src="https://img.shields.io/github/stars/yfanDai/LatentOmni"></a>
+<p style="margin-top:10px;">
+  <a href="#"><img src="https://img.shields.io/badge/arXiv-Coming%20Soon-red?style=badge&logo=arXiv" alt="arXiv" height="25"></a>
+  <a href="#"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Paper-Coming%20Soon-lightgrey" height="25"></a>
+  <a href="#"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-Coming%20Soon-lightgrey" height="25"></a>
+  <a href="#"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Coming%20Soon-lightgrey" height="25"></a>
+  <a href="https://github.com/yfanDai/LatentOmni"><img src="https://img.shields.io/github/stars/yfanDai/LatentOmni?style=social" alt="GitHub Stars" height="25"></a>
+</p>
 </div>
 
 ## 🔥 News
