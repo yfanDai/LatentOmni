@@ -3,8 +3,8 @@
 </p>
 
 <div align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Project-Page-blue" height="25" alt="Project Page"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-red" height="25" alt="Paper"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Project-Page-blue" height="25" alt="arXiv"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-red" height="25" alt="Huggingface Paper"></a>
   <a href="#"><img src="https://img.shields.io/badge/Code-Coming%20Soon-lightgrey" height="25" alt="Code"></a>
   <a href="#"><img src="https://img.shields.io/badge/Dataset-LatentOmni--Instruct--35K-green" height="25" alt="Dataset"></a>
 </div>
@@ -34,14 +34,15 @@ We are actively preparing to release the following:
   <i>Overview of LatentOmni. The framework enables unified latent reasoning to bridge audio, visual, and textual semantics through feature-level supervision and temporally synchronized audio-visual position encoding (OSPE).</i>
 </p>
 
-## Contributions
+## 🔍 Contributions
 
 - **Unified latent audio-visual reasoning.** We propose **LatentOmni**, enabling joint reasoning in a unified latent space for MLLMs.
 - **Feature-level latent supervision and OSPE.** We introduce latent reconstruction supervision and Omni-Sync Position Embedding to align cross-modal temporal dynamics and preserve audio-visual attention.
 - **Audio-visual interleaved CoT data synthesis.** We construct **LatentOmni-Instruct-35K**, a high-quality dataset with audio-visual interleaved reasoning trajectories.
 - **Strong empirical results.** LatentOmni substantially outperforms explicit-CoT baselines on challenging audio-visual reasoning benchmarks.
 
-## LatentOmni-Instruct-35K
+## 📑 LatentOmni-Instruct-35K
+LatentOmni-Instruct-35K is designed to fill the training-data gap for latent-space cross-modal reasoning. The pipeline synthesizes audio-visual question-answer pairs, filters them for reasoning difficulty, logical soundness, and modality dependency, and constructs trajectories that interleave textual reasoning with audio-visual segments.
 
 <p align="center">
   <img src="assets/LatentOmni-Instruct-35K.png" width="100%" alt="LatentOmni-Instruct-35K data synthesis pipeline" />
@@ -50,13 +51,12 @@ We are actively preparing to release the following:
   <i>LatentOmni-Instruct-35K is built through an audio-visual data synthesis and filtering pipeline that produces interleaved trajectories with dense audio-visual evidence for latent reconstruction.</i>
 </p>
 
-LatentOmni-Instruct-35K is designed to fill the training-data gap for latent-space cross-modal reasoning. The pipeline synthesizes audio-visual question-answer pairs, filters them for reasoning difficulty, logical soundness, and modality dependency, and constructs trajectories that interleave textual reasoning with aligned audio-visual segments.
 
-## Quick Start
+## 🚀 Quick Start
 
 Code, checkpoints, evaluation scripts, and dataset download instructions are coming soon.
 
-## Visualizations
+## 🔭 Visualizations
 
 <details open>
   <summary><i>Click to collapse or expand visual examples.</i></summary>
@@ -81,14 +81,12 @@ Code, checkpoints, evaluation scripts, and dataset download instructions are com
 
 </details>
 
-## Acknowledgements
-
-We thank the open-source multimodal learning community for building the datasets, models, and evaluation protocols that make audio-visual reasoning research possible. The README structure is inspired by the public CoF-T2I repository.
-
-## Citation
+## 📖 Citation
 
 If you find this project useful, please consider citing our work. The BibTeX entry will be updated once the paper is publicly available.
 
-## License
+## 📒 License
 
-The license will be updated before the full code release.
+## 📒 License
+
+This repository is released under the MIT License. See [LICENSE](LICENSE) for additional details.
