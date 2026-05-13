@@ -20,10 +20,9 @@
 
 We are actively preparing to release the following:
 
-- [x] Project README and visual assets
-- [ ] Paper and project page
+- [x] Project README and Paper
 - [ ] Training and inference code
-- [ ] LatentOmni model checkpoints and evaluation scripts
+- [ ] LatentOmni model checkpoints
 - [ ] LatentOmni-Instruct-35K dataset
 
 ## 🎬 LatentOmni
