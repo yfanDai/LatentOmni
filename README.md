@@ -56,7 +56,7 @@ LatentOmni-Instruct-35K is designed to fill the training-data gap for latent-spa
 
 ## 🚀 Quick Start
 
-Code, checkpoints, evaluation scripts, and dataset download instructions are coming soon.
+Code, checkpoint, and dataset preprocess instructions are coming soon.
 
 ## 📊 Results Analysis
 ### 1️⃣ Performance comparison on Omni Understanding Benchmarks
@@ -74,7 +74,7 @@ Code, checkpoints, evaluation scripts, and dataset download instructions are com
   <img src="assets/Table2.png" width="100%" alt="LatentOmni reasoning visualization" />
 </p>
 <p align="center">
-  <i>Accuracy comparison of LatentOmni and other methods on OmniVideoBench. The <b>best</b> is highlighted and the second-best is <u>underlined</u>. The performance gain of our method over the base model is indicated in red parentheses.</i>
+  <i>Accuracy comparison of LatentOmni and other methods on OmniVideoBench. The <b>best</b> is highlighted and the second-best is <u>underlined</u>. Performance gains over the base model are shown in red parentheses.</i>
 </p>
 
 ### 3️⃣ Performance comparison with other Latent Reasoning Methods on VideoMME
