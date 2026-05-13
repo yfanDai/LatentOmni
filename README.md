@@ -3,10 +3,11 @@
 </p>
 
 <div align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Project-Page-blue" height="25" alt="arXiv"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-red" height="25" alt="Huggingface Paper"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Code-Coming%20Soon-lightgrey" height="25" alt="Code"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Dataset-LatentOmni--Instruct--35K-green" height="25" alt="Dataset"></a>
+  <a href="#"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg"></a>
+  <a href="#"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Paper%20Coming%20Soon&color=blue"></a>
+  <a href="#"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model%20Coming%20Soon&color=green"></a>
+  <a href="#"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Data%20Coming%20Soon&color=yellow"></a>
+  <a href="https://github.com/yfanDai/LatentOmni"><img alt="Build" src="https://img.shields.io/github/stars/yfanDai/LatentOmni"></a>
 </div>
 
 ## 🔥 News
