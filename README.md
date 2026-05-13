@@ -13,7 +13,7 @@
 
 - **[2026.05.13]** We initialize the LatentOmni repository with the project overview, visual assets, and release roadmap.
 
-## Todo List
+## 🎯 Todo List
 
 We are actively preparing to release the following:
 
@@ -23,37 +23,23 @@ We are actively preparing to release the following:
 - [ ] LatentOmni model checkpoints and evaluation scripts
 - [ ] LatentOmni-Instruct-35K dataset
 
-## LatentOmni
+## 🎬 LatentOmni
 
-**LatentOmni** is a cross-modal reasoning framework for audio-visual multimodal large language models. Instead of relying only on text-based chain-of-thought, which can compress dense sensory evidence into discrete language tokens, LatentOmni performs joint reasoning in a unified continuous latent space. This design preserves rich audio-visual representations and keeps the model grounded in the original sensory inputs throughout the reasoning process.
+**LatentOmni** is a cross-modal reasoning framework for audio-visual multimodal large language models. Instead of relying only on text-based chain-of-thought,  LatentOmni performs joint reasoning in a unified continuous latent space. This design preserves rich audio-visual representations and keeps the model grounded in the original sensory inputs throughout the reasoning process.
 
 <p align="center">
   <img src="assets/overview.png" width="100%" alt="LatentOmni overview" />
 </p>
 <p align="center">
-  <i>Overview of LatentOmni. The framework bridges audio, visual, and textual semantics through unified latent reasoning, feature-level supervision, and temporally synchronized audio-visual position encoding.</i>
+  <i>Overview of LatentOmni. The framework enables unified latent reasoning to bridge audio, visual, and textual semantics through feature-level supervision and temporally synchronized audio-visual position encoding (OSPE).</i>
 </p>
 
-### Abstract
+## Contributions
 
-While joint audio-visual understanding is fundamental to advancing machine cognition, current multimodal large language models (MLLMs) still struggle with complex cross-modal reasoning. Existing text-based chain-of-thought (CoT) compresses rich multi-modal features into discrete text, incurring information loss and inducing a language-bound phenomenon that diminishes attention to audio-visual signals. In contrast, a continuous latent space inherently preserves dense representations, serving as an ideal carrier for audio-visual information.
-
-Motivated by this, we propose **LatentOmni**, a novel cross-modal reasoning framework. By introducing a feature-level supervision mechanism to directly reconstruct raw sensory inputs within the latent space, LatentOmni leverages native latent features to bridge audio-visual modalities and text, ensuring sustained attention on original audio-visual inputs throughout reasoning. Furthermore, to maintain temporal consistency across modalities in latent space, we design Omni-Sync Position Embedding (OSPE), which generalizes multimodal rotary position encodings to drive audio-visual synchrony.
-
-To supervise this reasoning process, we construct **LatentOmni-Instruct-35K**, a dataset interleaving text with audio-visual segments that serve as dense evidence for latent reconstruction. Comprehensive evaluation across multiple audio-visual reasoning benchmarks demonstrates that LatentOmni substantially outperforms strong explicit-CoT baselines, validating latent space joint reasoning as a promising path toward genuine omnimodal understanding.
-
-### Contributions
-
-- **Unified latent audio-visual reasoning.** We propose **LatentOmni**, a novel audio-visual reasoning framework that equips MLLMs with a tailored post-training pipeline to conduct joint reasoning in a unified latent space.
-- **Feature-level latent supervision and OSPE.** We introduce explicit feature-level supervision in latent space and Omni-Sync Position Embedding (OSPE) to facilitate cross-modal temporal alignment, preserve attention to audio-visual modalities, and bridge audio-visual evidence with textual semantics.
-- **Audio-visual interleaved CoT data synthesis.** We develop a new audio-visual interleaved CoT data synthesis pipeline and construct **LatentOmni-Instruct-35K**, a high-quality dataset for complex cross-modal latent reasoning.
-- **Strong empirical results.** Extensive experiments show that LatentOmni substantially outperforms numerous explicit-CoT models and achieves competitive performance on challenging audio-visual reasoning benchmarks.
-
-## Method Overview
-
-LatentOmni introduces latent reasoning tokens that carry dense audio-visual information inside the reasoning trajectory. During post-training, the model is supervised not only through text prediction, but also through reconstruction-oriented feature-level objectives that align latent states with the original audio and video evidence.
-
-OSPE further aligns audio and visual streams in the latent space by extending multimodal rotary position embeddings to temporally synchronized audio-visual inputs. This helps the model reason over event timing, segment-level correspondence, and cross-modal causal evidence.
+- **Unified latent audio-visual reasoning.** We propose **LatentOmni**, enabling joint reasoning in a unified latent space for MLLMs.
+- **Feature-level latent supervision and OSPE.** We introduce latent reconstruction supervision and Omni-Sync Position Embedding to align cross-modal temporal dynamics and preserve audio-visual attention.
+- **Audio-visual interleaved CoT data synthesis.** We construct **LatentOmni-Instruct-35K**, a high-quality dataset with audio-visual interleaved reasoning trajectories.
+- **Strong empirical results.** LatentOmni substantially outperforms explicit-CoT baselines on challenging audio-visual reasoning benchmarks.
 
 ## LatentOmni-Instruct-35K
 
