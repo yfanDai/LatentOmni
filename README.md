@@ -50,7 +50,7 @@ LatentOmni-Instruct-35K is designed to fill the training-data gap for latent-spa
   <img src="assets/LatentOmni-Instruct-35K.png" width="100%" alt="LatentOmni-Instruct-35K data synthesis pipeline" />
 </p>
 <p align="center">
-  <i>LatentOmni-Instruct-35K is built through an audio-visual data synthesis and filtering pipeline that produces interleaved trajectories with dense audio-visual evidence for latent reconstruction.</i>
+  <i>LatentOmni-Instruct-35K Dataset Construction Pipeline, including AVQA Data Synthesis & Filtering, Segment-Level Caption Synthesis, and AV-Interleaved Reasoning Trajectory Synthesis.</i>
 </p>
 
 
