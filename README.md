@@ -4,8 +4,8 @@
 
 <div align="center">
 <p style="margin-top:10px;">
-  <a href="#"><img src="https://img.shields.io/badge/arXiv-Coming%20Soon-red?style=badge&logo=arXiv" alt="arXiv" height="25"></a>
-  <a href="#"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Paper-Coming%20Soon-lightgrey" height="25"></a>
+  <a href="https://arxiv.org/abs/2605.22012"><img src="https://img.shields.io/badge/arXiv-2605.22012-red?style=badge&logo=arXiv" alt="arXiv" height="25"></a>
+  <a href="https://huggingface.co/papers/2605.22012"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Paper-2605.22012-blue" height="25"></a>
   <a href="#"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-Coming%20Soon-lightgrey" height="25"></a>
   <a href="#"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Coming%20Soon-lightgrey" height="25"></a>
   <a href="https://github.com/yfanDai/LatentOmni"><img src="https://img.shields.io/github/stars/yfanDai/LatentOmni?style=social" alt="GitHub Stars" height="25"></a>
