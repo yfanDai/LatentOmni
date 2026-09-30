@@ -13,3 +13,7 @@ checkpoints/
 results/
 data/
 logs/
+RL/ray_tmp/
+RL/ray_spill/
+auth.json
+.deepspeed_env

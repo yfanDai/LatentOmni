@@ -14,6 +14,7 @@
 
 ## 🔥 News
 
+- **[2026.09.30]** LatentOmni has been accepted to NeurIPS 2026!
 - **[2026.05.22]** We initialize the LatentOmni repository with the project overview, visual assets, and release roadmap.
 
 ## 🎯 Todo List
@@ -21,7 +22,7 @@
 We are actively preparing to release the following:
 
 - [x] Project README and Paper
-- [ ] Training and inference code
+- [x] Training and inference code
 - [ ] LatentOmni model checkpoints
 - [ ] LatentOmni-Instruct-35K dataset
 
@@ -56,7 +57,47 @@ LatentOmni-Instruct-35K is designed to fill the training-data gap for latent-spa
 
 ## 🚀 Quick Start
 
-Code, checkpoint, and dataset preprocess instructions are coming soon.
+The training and inference code is available in the repository root. Model checkpoints and dataset release instructions are coming soon.
+
+### Setup
+
+```bash
+conda create -n latentomni python=3.10
+conda activate latentomni
+pip install -r requirements.txt
+```
+
+### Training
+
+Update `--data_path`, `--load_model_path`, `--save_model_path`, and `--dataset_root` in [`scripts/sft_stage3.sh`](scripts/sft_stage3.sh) to match your local files, then run:
+
+```bash
+bash scripts/sft_stage3.sh
+```
+
+The script launches Stage 3 SFT with CE and MSE alignment losses on 8 GPUs. Its default latent size is 40, alignment weight is 0.1, and number of epochs is 2.
+
+### Inference
+
+For a single video, set the checkpoint and input paths before running [`test.py`](test.py):
+
+```bash
+LATENTOMNI_MODEL_PATH=path/to/checkpoint \
+LATENTOMNI_VIDEO_PATH=path/to/video.mp4 \
+python test.py
+```
+
+For DailyOmni inference and attention analysis, provide your local checkpoint, video directory, and question file to [`pipeline/dailyomni_eval_with_attention_ratio.py`](pipeline/dailyomni_eval_with_attention_ratio.py):
+
+```bash
+python pipeline/dailyomni_eval_with_attention_ratio.py \
+  --model_path path/to/checkpoint \
+  --video_base_dir path/to/videos \
+  --qa_path path/to/qa.json \
+  --fout_path results/dailyomni_predictions.jsonl
+```
+
+The core latent model implementation is in [`latent_model/modeling_qwen2_5_omni_latent.py`](latent_model/modeling_qwen2_5_omni_latent.py).
 
 ## 📊 Results Analysis
 ### 1️⃣ Performance comparison on Omni Understanding Benchmarks
@@ -113,7 +154,17 @@ Code, checkpoint, and dataset preprocess instructions are coming soon.
 
 ## 📖 Citation
 
-If you find this project useful, please consider citing our work. The BibTeX entry will be updated once the paper is publicly available.
+If you find this project useful, please consider citing our work:
+
+```bibtex
+@inproceedings{dai2026latentomni,
+  title     = {LatentOmni: Rethinking Omni-Modal Understanding via Unified Audio-Visual Latent Reasoning},
+  author    = {Yifan Dai and Zhenhua Wu and Bohan Zeng and Daili Hua and Jialing Liu and Bozhou Li and Yuran Wang and Chengzhuo Tong and Hao Liang and Xiaochen Ma and Junbo Niu and Tianyu Guo and Yang Shi and Yue Ding and Yiyan Ji and Bingyin Mei and Yushuo Guan and Yuanxing Zhang and Pengfei Wan and Fangcheng Fu and Wentao Zhang},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2605.22012}
+}
+```
 
 
 ## 📒 License
