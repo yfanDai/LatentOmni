@@ -14,7 +14,7 @@
 
 ## 🔥 News
 
-- **[2026.09.30]** LatentOmni has been accepted to NeurIPS 2026!🎉🎉🎉
+- **[2026.09.30]** LatentOmni has been accepted to NeurIPS 2026! 🎉🎉🎉
 - **[2026.05.22]** We initialize the LatentOmni repository with the project overview, visual assets, and release roadmap.
 
 ## 🎯 Todo List
